@@ -3,7 +3,7 @@ import { ThemeContext } from "./ThemeContext";
 import { Styles } from "./Styles";
 
 export function useTheme() {
-  const themeContext = {};
+  const themeContext = useContext(ThemeContext);
   let mergedStyle = Styles;
   if (Object.keys(themeContext).length > 0) {
     Object.keys(themeContext).forEach((w) => {
