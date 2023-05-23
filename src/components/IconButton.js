@@ -3,8 +3,8 @@ import { useTheme } from "../theme";
 import "../icons.css";
 import { setIconType } from "../utility";
 
-const IconButton = (
-  {
+const IconButton = (props) => {
+  const {
     icon,
     iconType,
     onClick,
@@ -13,19 +13,17 @@ const IconButton = (
       role: "button",
       tabIndex: 0,
     },
-  },
-  remainingProps
-) => {
+  } = props;
   const theme = useTheme();
   const formattedStyle = setIconType(theme.iconButton, iconType);
   const mergedStyle = formattedStyle.style;
 
   return (
     <button
+      {...props}
       style={{ ...mergedStyle.container, ...style.container }}
       onClick={onClick}
       {...ariaProps}
-      {...remainingProps}
     >
       <i
         className={formattedStyle.className}

@@ -1,8 +1,8 @@
 import React from "react";
 import { useTheme } from "../theme";
 
-const Badge = (
-  {
+const Badge = (props) => {
+  const {
     content,
     style = {},
     ariaProps = {
@@ -11,15 +11,10 @@ const Badge = (
       "aria-atomic": "true",
     },
     children,
-  },
-  remainingProps
-) => {
+  } = props;
   const theme = useTheme();
   return (
-    <div
-      style={{ ...theme.badge.container, ...style.container }}
-      {...remainingProps}
-    >
+    <div  {...props} style={{ ...theme.badge.container, ...style.container }}>
       {children}
       {content && (
         <div

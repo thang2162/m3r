@@ -1,23 +1,23 @@
 import React from "react";
 import { useTheme } from "../theme";
 
-const Button = ({
-  label,
-  onClick,
-  ariaProps = {
-    role: "button",
-    tabIndex: 0,
-  },
-  style = {},
-  children,
-  remainingProps,
-}) => {
+const Button = (props) => {
+  const {
+    label,
+    onClick,
+    ariaProps = {
+      role: "button",
+      tabIndex: 0,
+    },
+    style = {},
+    children,
+  } = props;
   const theme = useTheme();
   const mergedStyle = { ...theme.button, ...style };
 
   return (
     <button
-      {...ariaProps}
+      {...props}
       style={{ ...mergedStyle.container, ...style.container }}
       onMouseEnter={(e) => {
         e.target.style.backgroundColor = mergedStyle.hover.backgroundColor;
@@ -32,7 +32,7 @@ const Button = ({
         e.target.style.backgroundColor = mergedStyle.hover.backgroundColor;
       }}
       onClick={onClick}
-      {...remainingProps}
+      {...ariaProps}
     >
       {children || label}
     </button>

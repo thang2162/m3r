@@ -2,8 +2,8 @@ import React from "react";
 import { useTheme } from "../theme";
 import { generateUUID, getFirstOrLastListStyle } from "../utility";
 
-const BottomAppBar = (
-  {
+const BottomAppBar = (props) => {
+  const {
     style = {},
     ariaProps = {
       role: "navigation",
@@ -11,16 +11,14 @@ const BottomAppBar = (
     },
     children,
     sb = false,
-  },
-  remainingProps
-) => {
+  } = props;
   const theme = useTheme();
   const childrenElements = sb === true ? children.props.children : children;
   return (
     <footer
+      {...props}
       style={{ ...theme.bottomAppBar.container, ...style.container }}
       {...ariaProps}
-      {...remainingProps}
     >
       <nav>
         <ul style={{ ...theme.bottomAppBar.list, ...style.container }}>
