@@ -10,6 +10,7 @@ const Button = ({
   },
   style = {},
   children,
+  remainingProps,
 }) => {
   const theme = useTheme();
   const mergedStyle = { ...theme.button, ...style };
@@ -31,6 +32,7 @@ const Button = ({
         e.target.style.backgroundColor = mergedStyle.hover.backgroundColor;
       }}
       onClick={onClick}
+      {...remainingProps}
     >
       {children || label}
     </button>

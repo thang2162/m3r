@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "../";
+import "./assets/fill.css";
 
 export default {
   /* 👇 The title prop is optional.
@@ -32,9 +33,11 @@ export const Primary = {
 };
 
 Primary.args = {
-  icon: "grade",
+  icon: "new_releases",
   iconType: "",
   style: {
+    color: "green",
+    animation: "fill 2s infinite",
     fontVariationSettings: "'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48",
   },
   ariaProps: {

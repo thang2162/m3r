@@ -1,5 +1,6 @@
 import React from "react";
 import { IconButton } from "../";
+import './assets/fill.css'
 
 export default {
   /* 👇 The title prop is optional.
@@ -43,6 +44,7 @@ Primary.args = {
   iconType: "",
   style: {
     container: {
+      "animation": "fill 2s",
       fontVariationSettings: "'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48",
     },
   },

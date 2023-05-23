@@ -10,6 +10,7 @@ const Icon = ({
   ariaProps = {
     "aria-label": "icon",
   },
+  remainingProps
 }) => {
   const theme = useTheme();
   const formattedStyle = setIconType(theme, iconType);
@@ -19,6 +20,7 @@ const Icon = ({
       className={formattedStyle.className}
       style={{ ...formattedStyle.style.icon, ...style }}
       {...ariaProps}
+      {...remainingProps}
     >
       {icon}
     </span>

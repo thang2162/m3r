@@ -1,0 +1,35 @@
+@keyframes fill {
+  0% {
+    font-variation-settings: "FILL" 0;
+  }
+  10% {
+    font-variation-settings: "FILL" .1;
+  }
+  20% {
+    font-variation-settings: "FILL" .2;
+  }
+  30% {
+    font-variation-settings: "FILL" .3;
+  }
+  40% {
+    font-variation-settings: "FILL" .4;
+  }
+  50% {
+    font-variation-settings: "FILL" .5;
+  }
+  60% {
+    font-variation-settings: "FILL" .6;
+  }
+  70% {
+    font-variation-settings: "FILL" .7;
+  }
+  80% {
+    font-variation-settings: "FILL" .8;
+  }
+  90% {
+    font-variation-settings: "FILL" .9;
+  }
+  100% {
+    font-variation-settings: "FILL" 1;
+  }
+}

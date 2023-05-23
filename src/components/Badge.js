@@ -1,19 +1,25 @@
 import React from "react";
 import { useTheme } from "../theme";
 
-const Badge = ({
-  content,
-  style = {},
-  ariaProps = {
-    role: "status",
-    "aria-live": "polite",
-    "aria-atomic": "true",
+const Badge = (
+  {
+    content,
+    style = {},
+    ariaProps = {
+      role: "status",
+      "aria-live": "polite",
+      "aria-atomic": "true",
+    },
+    children,
   },
-  children,
-}) => {
+  remainingProps
+) => {
   const theme = useTheme();
   return (
-    <div style={{ ...theme.badge.container, ...style.container }}>
+    <div
+      style={{ ...theme.badge.container, ...style.container }}
+      {...remainingProps}
+    >
       {children}
       {content && (
         <div
