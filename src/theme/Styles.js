@@ -99,4 +99,21 @@ export const Styles = {
       direction: "ltr",
     },
   },
+  icon: {
+    display: "inline-block",
+    fontSize: "24px",
+    fontStyle: "normal",
+    fontWeight: "400",
+    lineHeight: "1",
+    textTransform: "none",
+    letterSpacing: "normal",
+    wordWrap: "normal",
+    whiteSpace: "nowrap",
+    direction: "ltr",
+    WebkitFontSmoothing: "antialiased",
+    textRendering: "optimizeLegibility",
+    MozOsxFontSmoothing: "grayscale",
+    cursor: "pointer",
+    outline: "none"
+  },
 };

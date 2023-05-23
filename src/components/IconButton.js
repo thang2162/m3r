@@ -14,7 +14,8 @@ const IconButton = ({
   },
 }) => {
   const theme = useTheme();
-  const mergedStyle = setIconType({ ...theme.iconButton, ...style }, iconType);
+  const formattedStyle = setIconType(theme.iconButton, iconType);
+  const mergedStyle = formattedStyle.style;
 
   return (
     <button
@@ -22,12 +23,12 @@ const IconButton = ({
       onClick={onClick}
       {...ariaProps}
     >
-      <i
-        className="material-icons"
-        style={{ ...mergedStyle.icon, ...style.icon }}
-      >
-        {icon}
-      </i>
+        <i
+          className={formattedStyle.className}
+          style={{ ...mergedStyle.icon, ...style.icon }}
+        >
+          {icon}
+        </i>
     </button>
   );
 };

@@ -12,7 +12,7 @@ export default {
     icon: { control: "text" },
     iconType: {
       control: "select",
-      options: ["", "regular", "sharp", "outlined", "round"],
+      options: ["", "sharp", "outlined", "round"],
     },
     onClick: { action: "clicked" },
     advanced: { control: "boolean" },
@@ -41,7 +41,11 @@ export const Primary = {
 Primary.args = {
   icon: "home",
   iconType: "",
-  style: {},
+  style: {
+    container: {
+      fontVariationSettings: "'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48",
+    },
+  },
   ariaProps: {
     role: "button",
     tabIndex: 0,
