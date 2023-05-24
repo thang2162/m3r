@@ -1,4 +1,4 @@
-import { Badge, BottomAppBar, Button, IconButton, Icon } from "./components";
+import { Badge, BottomAppBar, Button, IconButton, Icon, DatePicker } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
 
@@ -8,6 +8,7 @@ export {
   Button,
   IconButton,
   Icon,
+  DatePicker,
   generateUUID,
   themeContext,
   useTheme,
