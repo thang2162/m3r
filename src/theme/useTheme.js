@@ -10,7 +10,12 @@ export function useTheme() {
       if (Object.keys(Styles).find((x) => x === w)) {
         Object.keys(themeContext[w]).forEach((y) => {
           if (Object.keys(Styles[w]).find((z) => y === z)) {
-            mergedStyle[w][y] = { ...mergedStyle[w][y], ...themeContext[w][y] };
+            if (typeof mergedStyle[w][y] === "object" && typeof themeContext[w][y] === "object") {
+              mergedStyle[w][y] = { ...mergedStyle[w][y], ...themeContext[w][y] };
+            }
+            else {
+              mergedStyle[w][y] = themeContext[w][y];
+            }
           }
         });
       }
