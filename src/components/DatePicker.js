@@ -38,13 +38,13 @@ const DatePicker = (props) => {
         style={mergedStyle.input}
         value={selectedDate}
         onChange={handleDateChange}
-        onFocus={(e) =>
+        onFocusIn={(e) =>
           (e.target.style = {
             ...mergedStyle.input,
             ...mergedStyle.input_focused,
           })
         }
-        onBlur={(e) => (e.target.style = mergedStyle.input)}
+        onFocusOut={(e) => (e.target.style = mergedStyle.input)}
         {...ariaProps}
       />
     </div>
