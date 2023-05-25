@@ -141,4 +141,29 @@ export const Styles = {
       borderBottomColor: "#2962ff",
     },
   },
+  timePicker: {
+    container: {
+      fontFamily: "Roboto, sans-serif",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+    },
+    label: {
+      marginRight: "16px",
+      fontSize: "16px",
+      fontWeight: "bold",
+    },
+    input: {
+      border: "none",
+      borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+      fontSize: "16px",
+      padding: "8px",
+      marginRight: "16px",
+      transition: "borderBottomColor 0.2s ease-in-out",
+    },
+    input_focus: {
+      outline: "none",
+      borderBottomColor: "#2962ff",
+    },
+  },
 };
