@@ -13,7 +13,7 @@ const TimePicker = (props) => {
     style = {},
   } = props;
   const theme = useTheme();
-  const mergedStyle = { ...theme.timePicker, ...style };
+  const mergedStyle = theme.timePicker;
   const [selectedTime, setSelectedTime] = useState(value);
 
   const handleTimeChange = (event) => {
@@ -22,10 +22,10 @@ const TimePicker = (props) => {
   };
 
   return (
-    <div {...props} style={mergedStyle.container}>
+    <div {...props} style={{ ...mergedStyle.container, ...style.container }}>
       <label
         htmlFor="time-picker-input"
-        style={mergedStyle.label}
+        style={{ ...mergedStyle.label, ...style.label }}
         id="time-picker-label"
         name="time-picker-label"
       >
@@ -35,7 +35,7 @@ const TimePicker = (props) => {
         type="time"
         id="time-picker-input"
         name="time-picker-input"
-        style={mergedStyle.input}
+        style={{ ...mergedStyle.input, ...style.input }}
         value={selectedTime}
         onChange={handleTimeChange}
         onFocusIn={(e) =>

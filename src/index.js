@@ -6,6 +6,7 @@ import {
   Icon,
   DatePicker,
   TimePicker,
+  AutoComplete,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -18,6 +19,7 @@ export {
   Icon,
   DatePicker,
   TimePicker,
+  AutoComplete,
   generateUUID,
   themeContext,
   useTheme,

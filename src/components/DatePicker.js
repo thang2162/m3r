@@ -13,7 +13,7 @@ const DatePicker = (props) => {
     style = {},
   } = props;
   const theme = useTheme();
-  const mergedStyle = { ...theme.datePicker, ...style };
+  const mergedStyle = theme.datePicker;
   const [selectedDate, setSelectedDate] = useState(value);
 
   const handleDateChange = (event) => {
@@ -22,10 +22,10 @@ const DatePicker = (props) => {
   };
 
   return (
-    <div {...props} style={mergedStyle.container}>
+    <div {...props} style={{ ...mergedStyle.container, ...style.container }}>
       <label
         htmlFor="date-picker-input"
-        style={mergedStyle.label}
+        style={{ ...mergedStyle.label, ...style.label }}
         id="date-picker-label"
         name="date-picker-label"
       >
@@ -35,7 +35,7 @@ const DatePicker = (props) => {
         type="date"
         id="date-picker-input"
         name="date-picker-input"
-        style={mergedStyle.input}
+        style={{ ...mergedStyle.input, ...style.input }}
         value={selectedDate}
         onChange={handleDateChange}
         onFocusIn={(e) =>

@@ -166,4 +166,43 @@ export const Styles = {
       borderBottomColor: "#2962ff",
     },
   },
+  autoComplete: {
+    container: {
+      position: "relative",
+      width: "300px",
+    },
+    input: {
+      width: "100%",
+      padding: "10px",
+      border: "1px solid #ccc",
+    },
+    options: {
+      position: "absolute",
+      top: "100%",
+      left: "0",
+      width: "100%",
+      maxHeight: "200px",
+      overflowY: "auto",
+      padding: "0",
+      margin: "0",
+      listStyleType: "none",
+      backgroundColor: "#fff",
+      border: "1px solid #ccc",
+    },
+    option: {
+      padding: "10px",
+      cursor: "pointer",
+      backgroundColor: "#fff",
+    },
+    option_hover: {
+      backgroundColor: "#f0f0f0",
+    },
+    visuallyHidden: {
+      display: "flex",
+      width: "1px",
+      height: "1px",
+      overflow: "hidden",
+      position: "absolute",
+    },
+  },
 };
