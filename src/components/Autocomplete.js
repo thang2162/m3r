@@ -10,7 +10,7 @@ const AutoComplete = (props) => {
     dropdownOptions = [],
     onChange,
     style = {},
-    hiddenLabel = "Search", //Accessiblty Enhancement
+    hiddenAccessilbityLabel = "Search", //Accessiblty Enhancement
     ariaProps = {
       role: "combobox",
     },
@@ -116,7 +116,7 @@ const AutoComplete = (props) => {
         htmlFor="autocomplete-input"
         style={{ ...mergedStyle.visuallyHidden, ...style.visuallyHidden }}
       >
-        {hiddenLabel}
+        {hiddenAccessilbityLabel}
       </label>
       <input
         autoComplete={autoComplete ? "on" : "off"}
