@@ -13,7 +13,7 @@ const Button = (props) => {
     children,
   } = props;
   const theme = useTheme();
-  const mergedStyle = { ...theme.button };
+  const mergedStyle = theme.button;
 
   return (
     <button

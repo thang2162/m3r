@@ -205,4 +205,29 @@ export const Styles = {
       position: "absolute",
     },
   },
+  fab: {
+    container: {
+      position: "fixed",
+      bottom: "24px",
+      right: "24px",
+      width: "56px",
+      height: "56px",
+      borderRadius: "50%",
+      backgroundColor: "#ff4081",
+      color: "white",
+      border: "none",
+      cursor: "pointer",
+      boxShadow: "0px 2px 5px 0px rgba(0, 0, 0, 0.26)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    hover: {
+      backgroundColor: "#f50057",
+    },
+    icon: {
+      fontSize: "24px",
+      lineHeight: "1",
+    },
+  },
 };
