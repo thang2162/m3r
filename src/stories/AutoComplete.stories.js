@@ -20,6 +20,7 @@ export default {
     onChange: { action: "changed" },
     advanced: { control: "boolean" },
     style: { control: "object", if: { arg: "advanced" } },
+    hiddenLabel: { control: "text", if: { arg: "advanced" } },
     ariaProps: { control: "object", if: { arg: "advanced" } },
   },
 };
@@ -34,12 +35,14 @@ export const Primary = {
     initialValue,
     dropdownOptions,
     placeholder,
+    hiddenLabel,
     style,
     onChange,
     ariaProps,
   }) => (
     <AutoComplete
       initialValue={initialValue}
+      hiddenLabel={hiddenLabel}
       dropdownOptions={dropdownOptions}
       placeholder={placeholder}
       style={style}
@@ -52,6 +55,7 @@ export const Primary = {
 Primary.args = {
   initialValue: "",
   placeholder: "Enter or Select an Option.",
+  hiddenLabel: "Search",
   dropdownOptions: ["Red", "Green", "Blue"],
   autoComplete: false,
   style: {},
