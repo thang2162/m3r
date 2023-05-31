@@ -230,4 +230,45 @@ export const Styles = {
       lineHeight: "1",
     },
   },
+  switch: {
+    container: {
+      position: "relative",
+      display: "inline-block",
+      width: "40px",
+      height: "24px",
+    },
+    input: {
+      display: "none",
+    },
+    slider: {
+      position: "absolute",
+      top: "0",
+      left: "0",
+      right: "0",
+      bottom: "0",
+      backgroundColor: "#ccc",
+      borderRadius: "34px",
+      transition: "0.4s",
+    },
+    slider_before: {
+      position: "absolute",
+      content: "",
+      height: "18px",
+      width: "18px",
+      left: "3px",
+      bottom: "3px",
+      backgroundColor: "white",
+      borderRadius: "50%",
+      transition: "0.4s",
+    },
+    slider_checked: {
+      backgroundColor: "#2196f3",
+    },
+    sliderAnimation_before: {
+      transform: "translateX(0)"
+    },
+    sliderAnimation_after: {
+      transform: "translateX(16px)"
+    },
+  },
 };

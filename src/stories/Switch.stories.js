@@ -1,21 +1,16 @@
 import React from "react";
-import { FAB } from "../";
-import "./assets/fill.css";
+import { Switch } from "../";
 
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Components/FAB",
-  component: FAB,
+  title: "Components/Switch",
+  component: Switch,
   argTypes: {
-    icon: { control: "text" },
-    iconType: {
-      control: "select",
-      options: ["", "sharp", "outlined", "round"],
-    },
-    onClick: { action: "clicked" },
+    initialValue: { control: "boolean" },
+    onChange: { action: "changed" },
     advanced: { control: "boolean" },
     style: { control: "object", if: { arg: "advanced" } },
     ariaProps: { control: "object", if: { arg: "advanced" } },
@@ -28,22 +23,20 @@ export default {
  * to learn how to use render functions.
  */
 export const Primary = {
-  render: ({ icon, iconType, style, onClick, ariaProps }) => (
-    <FAB
-      icon={icon}
-      iconType={iconType}
+  render: ({ initialValue, style, onChange, ariaProps }) => (
+    <Switch
+      initialValue={initialValue}
       style={style}
       ariaProps={ariaProps}
-      onClick={onClick}
+      onChange={onChange}
     />
   ),
 };
 
 Primary.args = {
-  icon: "add",
-  iconType: "",
+  initialValue: false,
   style: {},
   ariaProps: {
-    "aria-label": "FAB Button",
+    role: "switch",
   },
 };

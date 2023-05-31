@@ -7,5 +7,17 @@ import DatePicker from "./DatePicker";
 import TimePicker from "./TimePicker";
 import AutoComplete from "./Autocomplete";
 import FAB from "./FAB";
+import Switch from "./Switch";
 
-export { Badge, BottomAppBar, Button, IconButton, Icon, DatePicker, TimePicker, AutoComplete, FAB };
+export {
+  Badge,
+  BottomAppBar,
+  Button,
+  IconButton,
+  Icon,
+  DatePicker,
+  TimePicker,
+  AutoComplete,
+  FAB,
+  Switch,
+};
