@@ -9,6 +9,7 @@ import {
   AutoComplete,
   FAB,
   Switch,
+  BottomSheet,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -24,6 +25,7 @@ export {
   AutoComplete,
   FAB,
   Switch,
+  BottomSheet,
   generateUUID,
   themeContext,
   useTheme,

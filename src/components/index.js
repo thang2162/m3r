@@ -8,6 +8,7 @@ import TimePicker from "./TimePicker";
 import AutoComplete from "./Autocomplete";
 import FAB from "./FAB";
 import Switch from "./Switch";
+import BottomSheet from "./BottomSheet";
 
 export {
   Badge,
@@ -20,4 +21,5 @@ export {
   AutoComplete,
   FAB,
   Switch,
+  BottomSheet,
 };

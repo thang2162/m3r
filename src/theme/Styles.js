@@ -265,10 +265,27 @@ export const Styles = {
       backgroundColor: "#2196f3",
     },
     sliderAnimation_before: {
-      transform: "translateX(0)"
+      transform: "translateX(0)",
     },
     sliderAnimation_after: {
-      transform: "translateX(16px)"
+      transform: "translateX(16px)",
+    },
+  },
+  bottomSheet: {
+    container: {
+      position: "fixed",
+      bottom: 0,
+      left: 0,
+      width: "100%",
+      backgroundColor: "white",
+      borderTopLeftRadius: "12px",
+      borderTopRightRadius: "12px",
+      boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.2)",
+      transition: "height 0.3s ease-in-out",
+      overflow: "hidden",
+    },
+    content: {
+      padding: "20px",
     },
   },
 };
