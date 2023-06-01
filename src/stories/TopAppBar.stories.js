@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./assets/fill.css";
 import { TopAppBar } from "..";
 
 export default {
@@ -16,6 +16,7 @@ export default {
       control: "select",
       options: ["", "sharp", "outlined", "round"],
     },
+    menuButtonStyle: { control: "object", if: { arg: "advanced" } },
     title: { control: "text" },
     onClick: { action: "clicked" },
     advanced: { control: "boolean" },
@@ -38,12 +39,14 @@ export const Primary = {
     onClick,
     menuButtonIcon,
     menuButtonIconType,
+    menuButtonStyle,
     title,
     hiddenAccessilbityLabel,
   }) => (
     <TopAppBar
       style={style}
       title={title}
+      menuButtonStyle={menuButtonStyle}
       hiddenAccessilbityLabel={hiddenAccessilbityLabel}
       ariaProps={ariaProps}
       onClick={onClick}
@@ -66,6 +69,13 @@ Primary.args = {
       <button>Button 2</button>
     </>
   ),
+  menuButtonStyle: {
+    container: {
+      color: "#fff",
+      animation: "fill 10s infinite",
+      fontVariationSettings: "'FILL' , 'wght' 700, 'GRAD' 0, 'opsz' 48",
+    },
+  },
   style: {},
   ariaProps: {
     role: "navigation",
