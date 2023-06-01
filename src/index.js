@@ -10,6 +10,7 @@ import {
   FAB,
   Switch,
   BottomSheet,
+  TopAppBar,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -26,6 +27,7 @@ export {
   FAB,
   Switch,
   BottomSheet,
+  TopAppBar,
   generateUUID,
   themeContext,
   useTheme,

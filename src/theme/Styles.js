@@ -288,4 +288,26 @@ export const Styles = {
       padding: "20px",
     },
   },
+  topAppBar: {
+    container: {
+      display: "flex",
+      alignItems: "center",
+      height: "64px",
+      backgroundColor: "#2196f3",
+      color: "#ffffff",
+    },
+    leading: {
+      margin: "0 16px",
+    },
+    title: {
+      margin: "0 16px",
+    },
+    actions: {
+      flex: "1 1 auto",
+      display: "flex",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      margin: "0 16px",
+    },
+  },
 };

@@ -9,6 +9,7 @@ import AutoComplete from "./Autocomplete";
 import FAB from "./FAB";
 import Switch from "./Switch";
 import BottomSheet from "./BottomSheet";
+import TopAppBar from "./TopAppBar";
 
 export {
   Badge,
@@ -20,6 +21,7 @@ export {
   TimePicker,
   AutoComplete,
   FAB,
+  TopAppBar,
   Switch,
   BottomSheet,
 };
