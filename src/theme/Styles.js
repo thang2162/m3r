@@ -310,4 +310,46 @@ export const Styles = {
       margin: "0 16px",
     },
   },
+  checkbox: {
+    container: {
+      display: "inline-flex",
+      alignItems: "center",
+      cursor: "pointer",
+      fontSize: "14px",
+    },
+    input: {
+      position: "absolute",
+      opacity: 0,
+      cursor: "pointer",
+    },
+    checkmark: {
+      position: "relative",
+      display: "inline-block",
+      width: "18px",
+      height: "18px",
+      backgroundColor: "#e0e0e0",
+      borderRadius: "4px",
+      marginRight: "8px",
+    },
+    checkmarkAfter: {
+      content: "",
+      position: "absolute",
+      left: "5px",
+      top: "2px",
+      width: "5px",
+      height: "10px",
+      border: "solid #ffffff",
+      borderWidth: "0 2px 2px 0",
+      transform: "rotate(45deg)",
+    },
+    checkmark_checked: {
+      backgroundColor: "#3f51b5",
+    },
+    "checkboxInput:checked ~ .checkmarkAfter": {
+      display: "block",
+    },
+    labelText: {
+      color: "#424242",
+    },
+  },
 };

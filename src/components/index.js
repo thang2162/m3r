@@ -10,6 +10,7 @@ import FAB from "./FAB";
 import Switch from "./Switch";
 import BottomSheet from "./BottomSheet";
 import TopAppBar from "./TopAppBar";
+import Checkbox from "./Checkbox";
 
 export {
   Badge,
@@ -24,4 +25,5 @@ export {
   TopAppBar,
   Switch,
   BottomSheet,
+  Checkbox,
 };

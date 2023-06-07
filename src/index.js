@@ -11,6 +11,7 @@ import {
   Switch,
   BottomSheet,
   TopAppBar,
+  Checkbox,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -28,6 +29,7 @@ export {
   Switch,
   BottomSheet,
   TopAppBar,
+  Checkbox,
   generateUUID,
   themeContext,
   useTheme,
