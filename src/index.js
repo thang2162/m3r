@@ -12,6 +12,7 @@ import {
   BottomSheet,
   TopAppBar,
   Checkbox,
+  RadioButton,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -30,6 +31,7 @@ export {
   BottomSheet,
   TopAppBar,
   Checkbox,
+  RadioButton,
   generateUUID,
   themeContext,
   useTheme,

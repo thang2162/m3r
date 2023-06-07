@@ -11,6 +11,7 @@ import Switch from "./Switch";
 import BottomSheet from "./BottomSheet";
 import TopAppBar from "./TopAppBar";
 import Checkbox from "./Checkbox";
+import RadioButton from "./RadioButton";
 
 export {
   Badge,
@@ -26,4 +27,5 @@ export {
   Switch,
   BottomSheet,
   Checkbox,
+  RadioButton,
 };

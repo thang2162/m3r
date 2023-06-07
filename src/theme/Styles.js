@@ -352,4 +352,34 @@ export const Styles = {
       color: "#424242",
     },
   },
+  radioButton: {
+    container: {
+      display: "block",
+      position: "relative",
+      paddingLeft: "35px",
+      marginBottom: "12px",
+      cursor: "pointer",
+      fontSize: "22px",
+      userSelect: "none",
+    },
+    input: {
+      position: "absolute",
+      opacity: "0",
+      cursor: "pointer",
+      height: "0",
+      width: "0",
+    },
+    checkmark: {
+      position: "absolute",
+      top: "0",
+      left: "0",
+      height: "25px",
+      width: "25px",
+      backgroundColor: "#eee",
+      borderRadius: "50%",
+    },
+    checkmark_checked: {
+      backgroundColor: "#2196F3",
+    },
+  },
 };
