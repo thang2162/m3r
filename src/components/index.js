@@ -12,6 +12,7 @@ import BottomSheet from "./BottomSheet";
 import TopAppBar from "./TopAppBar";
 import Checkbox from "./Checkbox";
 import RadioButton from "./RadioButton";
+import Carousel from "./Carousel";
 
 export {
   Badge,
@@ -28,4 +29,5 @@ export {
   BottomSheet,
   Checkbox,
   RadioButton,
+  Carousel,
 };

@@ -13,6 +13,7 @@ import {
   TopAppBar,
   Checkbox,
   RadioButton,
+  Carousel,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -32,6 +33,7 @@ export {
   TopAppBar,
   Checkbox,
   RadioButton,
+  Carousel,
   generateUUID,
   themeContext,
   useTheme,

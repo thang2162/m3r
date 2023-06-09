@@ -382,4 +382,30 @@ export const Styles = {
       backgroundColor: "#2196F3",
     },
   },
+  carousel: {
+    container: {
+      position: "relative",
+      width: "100%",
+      overflow: "hidden",
+    },
+    slides: {
+      display: "flex",
+      transition: "transform 0.5s ease-in-out",
+    },
+    slide: {
+      flex: "0 0 100%",
+      width: "100%",
+    },
+    button: {
+      position: "absolute",
+      top: "50%",
+      transform: "translateY(-50%)",
+      background: "none",
+      border: "none",
+      color: "#000",
+      fontSize: "1rem",
+      padding: "0.5rem",
+      cursor: "pointer",
+    },
+  },
 };
