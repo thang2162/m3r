@@ -1,4 +1,5 @@
 import React from "react";
+import "./assets/fill.css";
 
 import { Carousel } from "../";
 
@@ -16,8 +17,13 @@ export default {
     children: { control: "object" },
     rightIcon: { control: "text" },
     leftIcon: { control: "text" },
+    iconType: {
+      control: "select",
+      options: ["", "sharp", "outlined", "round"],
+    },
     advanced: { control: "boolean" },
     style: { control: "object", if: { arg: "advanced" } },
+    iconStyle: { control: "object", if: { arg: "advanced" } },
     ariaProps: { control: "object", if: { arg: "advanced" } },
   },
 };
@@ -28,10 +34,20 @@ export default {
  * to learn how to use render functions.
  */
 export const Primary = {
-  render: ({ rightIcon, leftIcon, children, style, ariaProps }) => (
+  render: ({
+    rightIcon,
+    leftIcon,
+    iconStyle,
+    iconType,
+    children,
+    style,
+    ariaProps,
+  }) => (
     <Carousel
       leftIcon={leftIcon}
       rightIcon={rightIcon}
+      iconType={iconType}
+      iconStyle={iconStyle}
       style={style}
       ariaProps={ariaProps}
       sb={true}
@@ -61,8 +77,14 @@ Primary.args = {
       />
     </>
   ),
-  rightIcon: "arrow_forward",
-  leftIcon: "arrow_back",
+  rightIcon: "arrow_circle_right",
+  leftIcon: "arrow_circle_left",
+  iconType: "",
+  iconStyle: {
+    color: "red",
+    animation: "fill 2s infinite",
+    fontVariationSettings: "'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48",
+  },
   style: {},
   ariaProps: {
     role: "region",

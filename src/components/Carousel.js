@@ -12,6 +12,8 @@ const Carousel = (props) => {
     },
     rightIcon = "arrow_forward",
     leftIcon = "arrow_back",
+    iconType,
+    iconStyle,
     children,
     sb = false,
   } = props;
@@ -61,14 +63,14 @@ const Carousel = (props) => {
         onClick={prevSlide}
         aria-label="Previous Slide"
       >
-        <Icon icon={leftIcon} />
+        <Icon icon={leftIcon} iconType={iconType} style={iconStyle} />
       </button>
       <button
         style={{ ...theme.carousel.button, ...style.button, right: "1rem" }}
         onClick={nextSlide}
         aria-label="Next Slide"
       >
-        <Icon icon={rightIcon} />
+        <Icon icon={rightIcon} iconType={iconType} style={iconStyle} />
       </button>
     </div>
   );
