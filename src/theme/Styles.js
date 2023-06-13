@@ -408,4 +408,27 @@ export const Styles = {
       cursor: "pointer",
     },
   },
+  tooltips: {
+    container: {
+      position: "relative",
+      display: "inline-block",
+    },
+    child: {
+      display: "inline-block",
+      cursor: "pointer",
+    },
+    tooltip: {
+      position: "absolute",
+      zIndex: 1,
+      top: "100%",
+      left: "50%",
+      transform: "translateX(100%)",
+      padding: "8px",
+      backgroundColor: "#000",
+      color: "#fff",
+      fontSize: "14px",
+      borderRadius: "4px",
+      transition: "opacity 0.3s",
+    },
+  },
 };

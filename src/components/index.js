@@ -13,6 +13,7 @@ import TopAppBar from "./TopAppBar";
 import Checkbox from "./Checkbox";
 import RadioButton from "./RadioButton";
 import Carousel from "./Carousel";
+import Tooltips from "./Tooltips";
 
 export {
   Badge,
@@ -30,4 +31,5 @@ export {
   Checkbox,
   RadioButton,
   Carousel,
+  Tooltips,
 };

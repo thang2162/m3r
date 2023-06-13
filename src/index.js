@@ -14,6 +14,7 @@ import {
   Checkbox,
   RadioButton,
   Carousel,
+  Tooltips,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -34,6 +35,7 @@ export {
   Checkbox,
   RadioButton,
   Carousel,
+  Tooltips,
   generateUUID,
   themeContext,
   useTheme,
