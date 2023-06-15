@@ -16,6 +16,7 @@ import {
   Carousel,
   Tooltips,
   Drawer,
+  ExtendedFAB,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -38,6 +39,7 @@ export {
   Carousel,
   Tooltips,
   Drawer,
+  ExtendedFAB,
   generateUUID,
   themeContext,
   useTheme,

@@ -15,6 +15,7 @@ import RadioButton from "./RadioButton";
 import Carousel from "./Carousel";
 import Tooltips from "./Tooltips";
 import Drawer from "./Drawer";
+import ExtendedFAB from "./ExtendedFAB";
 
 export {
   Badge,
@@ -34,4 +35,5 @@ export {
   Carousel,
   Tooltips,
   Drawer,
+  ExtendedFAB,
 };

@@ -448,4 +448,35 @@ export const Styles = {
       padding: "20px",
     },
   },
+  extendedFab: {
+    container: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "fixed",
+      bottom: "32px",
+      right: "32px",
+      width: "112px",
+      height: "56px",
+      borderRadius: "16px",
+      backgroundColor: "#2196f3",
+      color: "white",
+      fontSize: "24px",
+      border: "none",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+      cursor: "pointer",
+    },
+    hover: {
+      backgroundColor: "#1976d2",
+    },
+    label: {
+      fontSize: "14px",
+      fontWeight: "500",
+      paddingRight: "4px",
+      whiteSpace: "nowrap",
+    },
+    icon: {
+      marginRight: "8px",
+    },
+  },
 };

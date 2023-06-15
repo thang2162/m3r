@@ -22,6 +22,12 @@ const FAB = (props) => {
       {...props}
       style={{ ...mergedStyle.container, ...style.container }}
       onClick={onClick}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = mergedStyle.hover.backgroundColor;
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = mergedStyle.container.backgroundColor;
+      }}
       {...ariaProps}
     >
       <span
