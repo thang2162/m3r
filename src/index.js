@@ -15,6 +15,7 @@ import {
   RadioButton,
   Carousel,
   Tooltips,
+  SideSheet,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -36,6 +37,7 @@ export {
   RadioButton,
   Carousel,
   Tooltips,
+  SideSheet,
   generateUUID,
   themeContext,
   useTheme,

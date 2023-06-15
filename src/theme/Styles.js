@@ -271,23 +271,6 @@ export const Styles = {
       transform: "translateX(16px)",
     },
   },
-  bottomSheet: {
-    container: {
-      position: "fixed",
-      bottom: 0,
-      left: 0,
-      width: "100%",
-      backgroundColor: "white",
-      borderTopLeftRadius: "12px",
-      borderTopRightRadius: "12px",
-      boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.2)",
-      transition: "height 0.3s ease-in-out",
-      overflow: "hidden",
-    },
-    content: {
-      padding: "20px",
-    },
-  },
   topAppBar: {
     container: {
       display: "flex",
@@ -429,6 +412,40 @@ export const Styles = {
       fontSize: "14px",
       borderRadius: "4px",
       transition: "opacity 0.3s",
+    },
+  },
+  bottomSheet: {
+    container: {
+      position: "fixed",
+      bottom: 0,
+      left: 0,
+      width: "100%",
+      backgroundColor: "white",
+      borderTopLeftRadius: "12px",
+      borderTopRightRadius: "12px",
+      boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.2)",
+      transition: "height 0.3s ease-in-out",
+      overflow: "hidden",
+    },
+    content: {
+      padding: "20px",
+    },
+  },
+  sideSheet: {
+    container: {
+      position: "fixed",
+      top: 0,
+      right: "-300px", // Adjust the value as per your desired width
+      width: "300px", // Adjust the value as per your desired width
+      height: "100%",
+      transition: "right 0.3s ease-in-out",
+      backgroundColor: "white",
+      boxShadow: "0px -2px 10px rgba(0, 0, 0, 0.2)",
+      zIndex: 999,
+      overflowY: "auto",
+    },
+    content: {
+      padding: "20px",
     },
   },
 };

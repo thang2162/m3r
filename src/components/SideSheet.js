@@ -7,26 +7,35 @@ import React, {
 import { useTheme } from "../theme";
 import { useOutsideClick } from "../utility";
 
-const BottomSheet = forwardRef((props, ref) => {
+const SideSheet = forwardRef((props, ref) => {
   const {
-    height = "70vh",
+    width = "300px",
+    side = "right",
     ariaProps = {
       tabIndex: 0,
-      "aria-controls": "bottomSheet",
+      "aria-controls": "sideSheet",
     },
     style = {},
     children,
   } = props;
-  const theme = useTheme();
-  const mergedStyle = theme.bottomSheet;
-
   const [isOpen, setIsOpen] = useState(false);
-  const toggleBottomSheet = () => {
+  const theme = useTheme();
+  const mergedStyle = theme.sideSheet;
+
+  const toggleSideSheet = () => {
     setIsOpen(!isOpen);
   };
 
   const handleClickOutside = () => {
     setIsOpen(false);
+  };
+
+  const getRenderSide = () => {
+    if (side === "right") {
+      return { right: isOpen ? "0px" : `-${width}` };
+    } else {
+      return { left: isOpen ? "0px" : `-${width}` };
+    }
   };
 
   const wrapperRef = useRef(null);
@@ -36,7 +45,7 @@ const BottomSheet = forwardRef((props, ref) => {
     ref,
     () => {
       return {
-        toggle: toggleBottomSheet,
+        toggle: toggleSideSheet,
       };
     },
     []
@@ -45,11 +54,11 @@ const BottomSheet = forwardRef((props, ref) => {
   return (
     <div {...props} ref={wrapperRef} aria-expanded={isOpen} {...ariaProps}>
       <aside
-        id="bottomSheet"
+        id="sideSheet"
         style={{
           ...mergedStyle.container,
           ...style.container,
-          height: isOpen ? height : 0,
+          ...getRenderSide(),
         }}
       >
         <div style={{ ...mergedStyle.content, ...style.content }}>
@@ -60,4 +69,4 @@ const BottomSheet = forwardRef((props, ref) => {
   );
 });
 
-export default BottomSheet;
+export default SideSheet;
