@@ -7,22 +7,22 @@ import React, {
 import { useTheme } from "../theme";
 import { useOutsideClick } from "../utility";
 
-const SideSheet = forwardRef((props, ref) => {
+const Drawer = forwardRef((props, ref) => {
   const {
     width = "300px",
     side = "right",
     ariaProps = {
       tabIndex: 0,
-      "aria-controls": "sideSheet",
+      "aria-controls": "Drawer",
     },
     style = {},
     children,
   } = props;
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
-  const mergedStyle = theme.sideSheet;
+  const mergedStyle = theme.Drawer;
 
-  const toggleSideSheet = () => {
+  const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
@@ -45,7 +45,7 @@ const SideSheet = forwardRef((props, ref) => {
     ref,
     () => {
       return {
-        toggle: toggleSideSheet,
+        toggle: toggleDrawer,
       };
     },
     []
@@ -54,7 +54,7 @@ const SideSheet = forwardRef((props, ref) => {
   return (
     <div {...props} ref={wrapperRef} aria-expanded={isOpen} {...ariaProps}>
       <aside
-        id="sideSheet"
+        id="Drawer"
         style={{
           ...mergedStyle.container,
           ...style.container,
@@ -69,4 +69,4 @@ const SideSheet = forwardRef((props, ref) => {
   );
 });
 
-export default SideSheet;
+export default Drawer;

@@ -14,7 +14,7 @@ import Checkbox from "./Checkbox";
 import RadioButton from "./RadioButton";
 import Carousel from "./Carousel";
 import Tooltips from "./Tooltips";
-import SideSheet from "./SideSheet";
+import Drawer from "./Drawer";
 
 export {
   Badge,
@@ -33,5 +33,5 @@ export {
   RadioButton,
   Carousel,
   Tooltips,
-  SideSheet,
+  Drawer,
 };

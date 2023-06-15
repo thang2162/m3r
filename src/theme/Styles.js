@@ -431,7 +431,7 @@ export const Styles = {
       padding: "20px",
     },
   },
-  sideSheet: {
+  Drawer: {
     container: {
       position: "fixed",
       top: 0,
