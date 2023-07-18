@@ -17,6 +17,7 @@ import {
   Tooltips,
   Drawer,
   ExtendedFAB,
+  Snackbar,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -40,6 +41,7 @@ export {
   Tooltips,
   Drawer,
   ExtendedFAB,
+  Snackbar,
   generateUUID,
   themeContext,
   useTheme,

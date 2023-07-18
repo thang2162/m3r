@@ -479,4 +479,19 @@ export const Styles = {
       marginRight: "8px",
     },
   },
+  snackbar: {
+    container: {
+      backgroundColor: "#323232",
+      color: "#fff",
+      padding: "16px 24px",
+      borderRadius: "4px",
+      position: "fixed",
+      bottom: "24px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      zIndex: "9999",
+      transition: "opacity 0.3s ease-in-out",
+    },
+    text: { display: "block", fontSize: "14px" },
+  },
 };

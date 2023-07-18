@@ -16,6 +16,7 @@ import Carousel from "./Carousel";
 import Tooltips from "./Tooltips";
 import Drawer from "./Drawer";
 import ExtendedFAB from "./ExtendedFAB";
+import Snackbar from "./Snackbar";
 
 export {
   Badge,
@@ -36,4 +37,5 @@ export {
   Tooltips,
   Drawer,
   ExtendedFAB,
+  Snackbar,
 };
