@@ -18,6 +18,8 @@ import {
   Drawer,
   ExtendedFAB,
   Snackbar,
+  LinearProgress,
+  CircularLoader,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -42,6 +44,8 @@ export {
   Drawer,
   ExtendedFAB,
   Snackbar,
+  LinearProgress,
+  CircularLoader,
   generateUUID,
   themeContext,
   useTheme,

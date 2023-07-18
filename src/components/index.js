@@ -17,6 +17,8 @@ import Tooltips from "./Tooltips";
 import Drawer from "./Drawer";
 import ExtendedFAB from "./ExtendedFAB";
 import Snackbar from "./Snackbar";
+import LinearProgress from "./LinearProgress";
+import CircularLoader from "./CircularLoader";
 
 export {
   Badge,
@@ -38,4 +40,6 @@ export {
   Drawer,
   ExtendedFAB,
   Snackbar,
+  LinearProgress,
+  CircularLoader,
 };

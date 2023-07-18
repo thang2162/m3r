@@ -20,7 +20,7 @@ const Drawer = forwardRef((props, ref) => {
   } = props;
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
-  const mergedStyle = theme.Drawer;
+  const mergedStyle = theme.drawer;
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);

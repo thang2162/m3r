@@ -431,7 +431,7 @@ export const Styles = {
       padding: "20px",
     },
   },
-  Drawer: {
+  drawer: {
     container: {
       position: "fixed",
       top: 0,
@@ -493,5 +493,36 @@ export const Styles = {
       transition: "opacity 0.3s ease-in-out",
     },
     text: { display: "block", fontSize: "14px" },
+  },
+  circularLoader: {
+    container: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100vh",
+    },
+    spinner: {
+      display: "inline-block",
+      width: "50px",
+      height: "50px",
+      border: "3px solid rgba(0, 0, 0, .1)",
+      borderRadius: "50%",
+      borderTopColor: "#007BFF",
+      animation: "spin 1s ease-in-out infinite",
+    },
+  },
+  LinearProgress: {
+    container: {
+      width: "100%",
+      height: "4px",
+      backgroundColor: "#e0e0e0",
+      position: "relative",
+      overflow: "hidden",
+    },
+    bar: {
+      height: "100%",
+      backgroundColor: "#6200ee",
+      transition: "width 0.3s ease",
+    },
   },
 };
