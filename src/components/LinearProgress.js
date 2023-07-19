@@ -13,7 +13,7 @@ const LinearProgress = (props) => {
   } = props;
 
   const theme = useTheme();
-  const mergedStyle = theme.LinearProgress;
+  const mergedStyle = theme.linearProgress;
 
   return (
     <div

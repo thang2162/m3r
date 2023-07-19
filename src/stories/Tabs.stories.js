@@ -1,17 +1,14 @@
 import React from "react";
 
-import { BottomAppBar } from "../";
+import { TabView, Tab } from "../";
 
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Components/BottomAppBar",
-  component: BottomAppBar,
-  // parameters: {
-  //   controls: { exclude: ["sb"] },
-  // },
+  title: "Components/Tabs",
+  component: TabView,
   argTypes: {
     advanced: { control: "boolean" },
     style: { control: "object", if: { arg: "advanced" } },
@@ -26,18 +23,23 @@ export default {
  */
 export const Primary = {
   render: ({ style, ariaProps }) => (
-    <BottomAppBar style={style} ariaProps={ariaProps} sb={true}>
-      <button>Home</button>
-      <button>About</button>
-      <button>Contact</button>
-    </BottomAppBar>
+    <TabView style={style} ariaProps={ariaProps}>
+      <Tab label="Home">
+        <h1>Home</h1>
+      </Tab>
+      <Tab label="About">
+        <h1>About</h1>
+      </Tab>
+      <Tab label="Contact">
+        <h1>Contact</h1>
+      </Tab>
+    </TabView>
   ),
 };
 
 Primary.args = {
   style: {},
   ariaProps: {
-    role: "navigation",
-    "aria-label": "Bottom App Bar",
+    role: "tablist",
   },
 };

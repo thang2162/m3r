@@ -20,6 +20,8 @@ import {
   Snackbar,
   LinearProgress,
   CircularLoader,
+  TabView,
+  Tab,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -46,6 +48,8 @@ export {
   Snackbar,
   LinearProgress,
   CircularLoader,
+  TabView,
+  Tab,
   generateUUID,
   themeContext,
   useTheme,

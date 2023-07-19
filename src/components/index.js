@@ -19,6 +19,7 @@ import ExtendedFAB from "./ExtendedFAB";
 import Snackbar from "./Snackbar";
 import LinearProgress from "./LinearProgress";
 import CircularLoader from "./CircularLoader";
+import { TabView, Tab } from "./Tabs";
 
 export {
   Badge,
@@ -42,4 +43,6 @@ export {
   Snackbar,
   LinearProgress,
   CircularLoader,
+  TabView,
+  Tab,
 };

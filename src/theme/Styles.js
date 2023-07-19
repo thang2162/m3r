@@ -511,7 +511,7 @@ export const Styles = {
       animation: "spin 1s ease-in-out infinite",
     },
   },
-  LinearProgress: {
+  linearProgress: {
     container: {
       width: "100%",
       height: "4px",
@@ -524,5 +524,34 @@ export const Styles = {
       backgroundColor: "#6200ee",
       transition: "width 0.3s ease",
     },
+  },
+  tabs: {
+    container: {
+      width: "100%",
+      display: "flex",
+      flexDirection: "column",
+      boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+    }, 
+    tab: {
+      flex: 1,
+      padding: "16px",
+      textAlign: "center",
+      cursor: "pointer",
+      userSelect: "none",
+    },
+    tabActive: {
+      backgroundColor: "#2196f3",
+      color: "#fff",
+    },
+    tabContent: {
+      padding: "16px",
+    },
+    header: {
+      display: "flex",
+      backgroundColor: "#f5f5f5",
+      listStyle: "none",
+      marginTop: 0,
+      padding: 0,
+    }
   },
 };
