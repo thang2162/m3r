@@ -7,7 +7,7 @@ import React, {
 import { useTheme } from "../theme";
 import { useOutsideClick } from "../utility";
 
-const Drawer = forwardRef((props, ref) => {
+const Drawer = forwardRef(function Drawer(props, ref) {
   const {
     width = "300px",
     side = "right",

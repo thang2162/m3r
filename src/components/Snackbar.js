@@ -1,7 +1,7 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 import { useTheme } from "../theme";
 
-const Snackbar = forwardRef((props, ref) => {
+const Snackbar = forwardRef(function Snackbar(props, ref) {
   const {
     timeout = 3000,
     text = "",

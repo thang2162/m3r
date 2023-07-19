@@ -7,7 +7,7 @@ import React, {
 import { useTheme } from "../theme";
 import { useOutsideClick } from "../utility";
 
-const BottomSheet = forwardRef((props, ref) => {
+const BottomSheet = forwardRef(function BottomSheet(props, ref) {
   const {
     height = "70vh",
     ariaProps = {

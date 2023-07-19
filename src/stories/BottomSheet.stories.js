@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { FAB, BottomSheet } from "../";
+import { BottomSheet, FAB } from "../";
 
 export default {
   /* 👇 The title prop is optional.
@@ -27,14 +27,14 @@ export const Primary = {
     const bsRef = useRef(null);
     return (
       <>
-        <FAB icon="bottom_panel_open" onClick={() => bsRef.current.toggle()} />
-        <BottomSheet
+      <BottomSheet
           ref={bsRef}
           height={height}
           style={style}
           ariaProps={ariaProps}
           children={children}
         />
+        <FAB icon="bottom_panel_open" onClick={() => bsRef.current.toggle()} />
       </>
     );
   },
