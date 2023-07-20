@@ -22,6 +22,7 @@ import {
   CircularLoader,
   TabView,
   Tab,
+  SegmentedButton,
 } from "./components";
 import { generateUUID } from "./utility";
 import { themeContext, useTheme } from "./theme";
@@ -50,6 +51,7 @@ export {
   CircularLoader,
   TabView,
   Tab,
+  SegmentedButton,
   generateUUID,
   themeContext,
   useTheme,

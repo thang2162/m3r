@@ -554,4 +554,27 @@ export const Styles = {
       padding: 0,
     }
   },
+  segmentedButton: {
+    container: {
+      display: 'inline-flex',
+      borderRadius: '4px',
+      overflow: 'hidden',
+    },
+    button: {
+      flex: 1,
+      padding: '10px 15px',
+      border: 'none',
+      fontSize: '14px',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s'
+    },
+    buttonActive: {
+      backgroundColor: '#2196f3',
+      color: '#fff',
+    },
+    buttonInactive: {
+      backgroundColor: '#f5f5f5',
+      color: '#333',
+    }
+  }
 };

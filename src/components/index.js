@@ -20,6 +20,7 @@ import Snackbar from "./Snackbar";
 import LinearProgress from "./LinearProgress";
 import CircularLoader from "./CircularLoader";
 import { TabView, Tab } from "./Tabs";
+import SegmentedButton from "./SegmentedButton";
 
 export {
   Badge,
@@ -45,4 +46,5 @@ export {
   CircularLoader,
   TabView,
   Tab,
+  SegmentedButton,
 };
