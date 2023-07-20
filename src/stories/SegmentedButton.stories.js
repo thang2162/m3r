@@ -38,7 +38,7 @@ export const Primary = {
 Primary.args = {
   style: {},
   ariaProps: {
-    role: "segmented-button",
+    role: "navigation",
     "aria-label": "Bottom App Bar",
   },
 };

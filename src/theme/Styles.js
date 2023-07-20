@@ -562,6 +562,7 @@ export const Styles = {
     },
     button: {
       flex: 1,
+      width: 100,
       padding: '10px 15px',
       border: 'none',
       fontSize: '14px',
